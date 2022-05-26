@@ -1,0 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Barlow', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+/*Color Variables*/ 
+$acc: #E60C5E; 
+$fcc: #C2A773; 
+$pfont: #0A0B2E; 
+$font: #090036; 
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #1b1b1b;
+    background-color: rgba(245, 245, 249);
+}
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  *::-webkit-input-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+  }
+  
+  *:-ms-input-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+  }
+  
+  *::-ms-input-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+  }
+  
+  *::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    font-size: 16px;
+    opacity: 1;
+    font-weight: 400;
+  }
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+

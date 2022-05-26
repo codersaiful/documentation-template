@@ -1,0 +1,13 @@
+.banner-section {
+  height: 150px;
+  background: #0A3638;
+  border-bottom: none;
+  padding-top: 75px;
+  position: relative;
+  top: -1px;
+  background-image: url(https://dl.dropbox.com/s/l1wwq6p8vj4y89q/texture-bg.svg?dl=0);
+  background-position: bottom center;
+  background-position-y: -150px;
+  background-size: 1200px;
+  background-repeat: no-repeat;
+}
