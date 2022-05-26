@@ -53,7 +53,7 @@ a {
 *::-moz-placeholder {
   font-family: "Roboto", sans-serif;
   color: #888;
-  font-size: 16px;
+  font-size: 14px;
   opacity: 1;
   font-weight: 400;
 }
@@ -61,7 +61,7 @@ a {
 *::placeholder {
   font-family: "Roboto", sans-serif;
   color: #888;
-  font-size: 16px;
+  font-size: 14px;
   opacity: 1;
   font-weight: 400;
 }
@@ -291,6 +291,87 @@ a {
 #category-15 h3:hover:before {
   -webkit-filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
           filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
+}
+
+.category-section {
+  padding: 40px 0;
+}
+
+.category-form .input-group {
+  position: relative;
+}
+.category-form .input-group input {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  border: 1px solid #e9e9e9;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding-right: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  height: 40px;
+  border: 1px solid #D0D0D0;
+  border-radius: 3px;
+  color: #666;
+  padding: 0 14px;
+}
+.category-form .input-group span {
+  top: 50%;
+  right: 20px;
+  position: absolute;
+  color: #666;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 16px;
+}
+
+.Categories-list h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #1b1b1b;
+  font-weight: 600;
+  margin-bottom: 4px;
+  padding-top: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.Categories-list .category-nav-list {
+  margin-bottom: 34px;
+  padding-left: 0;
+}
+.Categories-list .category-nav-list li {
+  margin: 2px 0 3px;
+  list-style: none;
+}
+.Categories-list .category-nav-list li a {
+  display: inline-block;
+  color: #858585;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 6px 15px 6px 0;
+  line-height: 20px;
+  margin-left: 0;
+}
+.Categories-list .category-nav-list li a:hover {
+  color: #222;
+}
+
+.category-content {
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+  border: solid 1px #F5F5F5;
+  color: #222;
+  min-height: 460px;
+  padding: 45px 46px;
+  position: relative;
+}
+.category-content .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*----------------------------------------------------*/

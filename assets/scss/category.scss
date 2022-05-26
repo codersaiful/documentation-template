@@ -14,6 +14,7 @@
         transition: .15s;
         position: relative;
         top: 0;
+
         &:hover {
             background: white;
             transition: .15s;
@@ -58,7 +59,7 @@
             color: #0044C0;
             margin-top: 15px;
         }
-       
+
     }
 }
 
@@ -67,7 +68,8 @@
         &:before {
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18h-2v-8h2v8zm-1-12.25c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25.56-1.25 1.25-1.25z"/></svg>');
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
@@ -79,7 +81,8 @@
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z"/></svg>');
 
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
@@ -92,7 +95,8 @@
 
 
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
@@ -104,7 +108,8 @@
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M22 6v16h-20v-16h20zm2-6h-24v24h24v-24zm-16 9h-4v4h4v-4zm6 0h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4z"/></svg>');
 
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
@@ -116,44 +121,139 @@
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 16"><path d="M12,18H6V14h6m9,0V12L20,7H4L3,12v2H4v6H14V14h4v6h2V14M20,4H4V6H20Z" transform="translate(-3 -4)"/></svg>');
 
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
 }
+
 #category-13 {
     h3 {
         &:before {
-                display: block;
-                content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.33337 9.33333L8.66671 2V6.66667H12L6.66671 14V9.33333H3.33337Z"/></svg>');
-            
+            display: block;
+            content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.33337 9.33333L8.66671 2V6.66667H12L6.66671 14V9.33333H3.33337Z"/></svg>');
+
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
 }
+
 #category-14 {
     h3 {
         &:before {
             content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M12 10c-3.865 0-7 3.134-7 7s3.135 7 7 7 7-3.134 7-7-3.135-7-7-7zm0 12c-2.762 0-5-2.239-5-5s2.238-5 5-5 5 2.239 5 5-2.238 5-5 5zm1.484-4.315l1.516-1.457-2.083-.287-.917-1.892-.917 1.892-2.083.287 1.516 1.457-.369 2.07 1.853-.992 1.854.992-.37-2.07zm-5.484-17.685l5.958 8h-3.958l-6-8h4zm6.604 7.194l5.396-7.194h-4l-3.376 4.534 1.98 2.66z"/></svg>');
-            
+
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
 }
+
 #category-15 {
     h3 {
         &:before {
-                display: block;
-                content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>');
-            
-            
+            display: block;
+            content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>');
+
+
         }
-        &:hover:before{
+
+        &:hover:before {
             filter: invert(51%) sepia(81%) saturate(1511%) hue-rotate(0deg) brightness(102%) contrast(106%);
         }
     }
+}
+
+.category-section {
+    padding: 40px 0;
+}
+
+.category-form {
+    .input-group {
+        position: relative;
+
+        input {
+            font-family: 'Roboto', sans-serif;
+            display: block;
+            border: 1px solid #e9e9e9;
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding-right: 35px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            height: 40px;
+            border: 1px solid #D0D0D0;
+            border-radius: 3px;
+            color: #666;
+            padding: 0 14px;
+
+        }
+
+        span {
+            top: 50%;
+            right: 20px;
+            position: absolute;
+            color: #666;
+            transform: translate(0, -50%);
+            font-size: 16px;
+        }
+    }
+}
+
+.Categories-list {
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        color: #1b1b1b;
+        font-weight: 600;
+        margin-bottom: 4px;
+        padding-top: 30px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .category-nav-list {
+        margin-bottom: 34px;
+        padding-left: 0;
+
+        li {
+            margin: 2px 0 3px;
+            list-style: none;
+
+            a {
+                display: inline-block;
+                color: #858585;
+                font-size: 13px;
+                font-weight: 400;
+                padding: 6px 15px 6px 0;
+                line-height: 20px;
+                margin-left: 0;
+
+                &:hover {
+                    color: #222;
+                }
+            }
+        }
+    }
+}
+
+.category-content {
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+    border: solid 1px #F5F5F5;
+    color: #222;
+    min-height: 460px;
+    padding: 45px 46px;
+    position: relative;
+.content-wrapper {
+    display: flex;
+}
 }
