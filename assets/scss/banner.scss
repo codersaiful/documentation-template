@@ -10,11 +10,13 @@
     border-bottom: 1px solid #DFDFDF;
     margin-bottom: 3em;
     padding-top:100px; 
+    overflow: hidden;
    
 }
 #searchBar {
     display: flex;
     justify-content: center;
+    gap:20px;
     .search-query {
         background: #fff;
         border-color: none;
@@ -44,13 +46,19 @@
         height: 50px;
         position: absolute;
         transition: 0.5s;
-        margin-left: 20px;
         line-height: 0;
+        display: block;
         &:hover {
             background: #FFA800;
             border-color: #ccc;
             color: #000;
             transition: 0.5s;
+        }
+        span {
+            display: block;
+        }
+        i {
+            display: none;
         }
     }
 }

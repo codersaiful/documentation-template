@@ -6,7 +6,9 @@
         color: #9b9b9b;
         text-align: center;
         margin: 20px 0px 40px 0px;
-        
+        &.copyright {
+            text-align: right;
+        }
     }
 
     a {
