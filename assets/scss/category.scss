@@ -154,6 +154,7 @@
                     }
                 }
             }
+
         }
     }
 }
@@ -245,10 +246,17 @@
         a {
             color: #0044C0;
             font-weight: normal;
+            margin-bottom: 6px;
             i{
                 color: #C6C6C6;
                 margin-right: 10px;
             }
+        }
+        p {
+            font-size: 14px;
+            color: #585858;
+            line-height: 24px;
+            padding-left:20px;
         }
     }
 

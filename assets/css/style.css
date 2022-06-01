@@ -6,7 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #1b1b1b;
-  background-color: #f5f5f9;
+  background-color: rgb(245, 245, 249);
 }
 
 a {
@@ -403,10 +403,17 @@ a {
 .content-article-list li a {
   color: #0044C0;
   font-weight: normal;
+  margin-bottom: 6px;
 }
 .content-article-list li a i {
   color: #C6C6C6;
   margin-right: 10px;
+}
+.content-article-list li p {
+  font-size: 14px;
+  color: #585858;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 #category-8 h3:before {
@@ -720,10 +727,17 @@ a {
 .content-article-list li a {
   color: #0044C0;
   font-weight: normal;
+  margin-bottom: 6px;
 }
 .content-article-list li a i {
   color: #C6C6C6;
   margin-right: 10px;
+}
+.content-article-list li p {
+  font-size: 14px;
+  color: #585858;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 #category-8 h3:before {
