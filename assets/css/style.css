@@ -118,7 +118,7 @@ a {
   overflow: hidden;
 }
 
-#searchBar {
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +127,7 @@ a {
           justify-content: center;
   gap: 20px;
 }
-#searchBar .search-query {
+.wrapper .search-query {
   background: #fff;
   border-color: none;
   border: none;
@@ -143,7 +143,7 @@ a {
   font-size: 16px;
   padding: 14px;
 }
-#searchBar button {
+.wrapper button {
   background: #FFBC00;
   border: 0 none;
   border-color: none;
@@ -161,18 +161,86 @@ a {
   line-height: 0;
   display: block;
 }
-#searchBar button:hover {
+.wrapper button:hover {
   background: #FFA800;
   border-color: #ccc;
   color: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-#searchBar button span {
+.wrapper button span {
   display: block;
 }
-#searchBar button i {
+.wrapper button i {
   display: none;
+}
+.wrapper .search-input {
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+.wrapper .search-input input {
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.wrapper .search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+  display: block;
+}
+
+.autocom-box li:hover {
+  background: #efefef;
+}
+
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #0f4ce4;
+  cursor: pointer;
 }
 
 /*----------------------------------------------------*/

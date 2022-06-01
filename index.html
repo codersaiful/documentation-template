@@ -30,43 +30,41 @@
 
     <!-- banner-section -->
     <section id="docsSearch" class="banner-section">
-        <div class="search" id="searchBar">
-            <div class="form">
+        <!-- <div class="wrapper search" id="searchBar">
+            <div class="form"> 
                 <form action="" method="GET">
-                    <input type="text" name="query" class="search search-query" placeholder="Search the knowledge base">
+                    <input type="text" name="query" class="search-query" placeholder="Search the knowledge base">
                 </form>
-                 <!-- <ul class="list">
-                    <li class="">
-                        <a href="#">Product support</a>
-                    </li> 
-                    <li class="active">
-                        <a href="#">AppSumo Affiliate Program</a>
-                    </li>
-                    <li>
-                        <a href="#">Update profile photo</a>
-                    </li>
-                    <li>
-                        <a href="#">Product Reviews and Questions</a>
-                    </li>
-                    <li>
-                        <a href="#">Manage email preferences or unsubscribe</a></li>
-                    <li>
-                        <a href="#">How do I login to my licensed product?</a>
-                    </li>
-                    <li>
-                        <a href="#">How do I partner with AppSumo and submit my product?</a>
-                    </li>
-                    <li>
-                        <a href="#">How do I ask for reviews once my product goes live?</a>
-                    </li>
-                </ul>  -->
+                
             </div>
-            <div class="button">
+            <div class="icon button">
                 <button type="submit"><span>Search</span><i class="fa fa-search"></i></button>
             </div>
            
+        </div>  -->
+        <div class="container">
+            <div class="wrapper" id="searchBar">
+                <div class="search-input">
+                    <div id="searchBar">
+                  <a href="" target="_blank" hidden></a>
+                  <input class="search-query" type="text" placeholder="Search the knowledge base">
+                  <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                  </div>
+                    </div>
+                  <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="button">
+                    <button type="submit"><span>Search</span><i class="fa fa-search"></i></button>
+                </div>
+              </div>
         </div>
+        
     </section>
+
+
+               
+               
     <!-- category-list -->
     <section class="category-list">
         <div class="container">
@@ -192,7 +190,95 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/main.js"></script>
+   
+   
+   <script>
+        let suggestions = [
+  "Product support",
+  "What is AppSumo Plus?",
+  "My deal is live! Now what?",
+  "How do I ask for reviews once my product goes live?",  
+  "Product support", 
+  "AppSumo Affiliate Program",
+  "Update profile photo", 
+  "Product Reviews and Questions",
+  "Manage email preferences or unsubscribe",
+  "How do I login to my licensed product?",
+  "How do I partner with AppSumo and submit my product?",
+  "How do I ask for reviews once my product goes live?", 
+  "Designer",
+  "Developer",
+  "Web Designer",
+];
 
+
+//Create this file first before writing javascript
+
+
+
+
+
+// getting all required elements
+const searchWrapper = document.querySelector(".search-input");
+const inputBox = searchWrapper.querySelector("input");
+const suggBox = searchWrapper.querySelector(".autocom-box");
+const icon = searchWrapper.querySelector(".icon");
+let linkTag = searchWrapper.querySelector("a");
+let webLink;
+
+// if user press any key and release
+inputBox.onkeyup = (e)=>{
+  let userData = e.target.value; //user enetered data
+  let emptyArray = [];
+  if(userData){
+      icon.onclick = ()=>{
+          webLink = "https://www.google.com/search?q=" + userData;
+          linkTag.setAttribute("href", webLink);
+          console.log(webLink);
+          linkTag.click();
+      }
+      emptyArray = suggestions.filter((data)=>{
+          //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+          return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
+      });
+      emptyArray = emptyArray.map((data)=>{
+          // passing return data inside li tag
+          return data = '<li>'+ data +'</li>';
+      });
+      searchWrapper.classList.add("active"); //show autocomplete box
+      showSuggestions(emptyArray);
+      let allList = suggBox.querySelectorAll("li");
+      for (let i = 0; i < allList.length; i++) {
+          //adding onclick attribute in all li tag
+          allList[i].setAttribute("onclick", "select(this)");
+      }
+  }else{
+      searchWrapper.classList.remove("active"); //hide autocomplete box
+  }
+}
+
+function select(element){
+  let selectData = element.textContent;
+  inputBox.value = selectData;
+  icon.onclick = ()=>{
+      webLink = "https://www.google.com/search?q=" + selectData;
+      linkTag.setAttribute("href", webLink);
+      linkTag.click();
+  }
+  searchWrapper.classList.remove("active");
+}
+
+function showSuggestions(list){
+  let listData;
+  if(!list.length){
+      userValue = inputBox.value;
+      listData = '<li>'+ userValue +'</li>';
+  }else{
+      listData = list.join('');
+  }
+  suggBox.innerHTML = listData;
+}
+      </script>
     
 </body>
 
