@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/mmenu-light.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header id="mainNav" class="header-section">
         <div class="container">
-            <div class="navbar-inner">
-                <div class="logo">
-                    <a class="brand" href="index.html"><img src="assets/images/logo.png"></a>
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="logo">
+                        <a class="brand" href="index.html"><img src="assets/images/logo.png"></a>
+                    </div>
                 </div>
-                <div class="main-menu">
-                    <ul class="nav">
-                        <li id="home" class="active"><a href="/">Home <b class="caret"></b></a></li>
-                    </ul>
+                <div class="col-md-9 col-lg-9">
+                    <div class="header-menu">
+                        <a class="mobile-menu" href="#ham-navigation"><span></span></a>
+                        <div id="ham-navigation" class="main-menu">
+                            <ul class="navigation clearfix">
+                                <li><a href="#index.html"> Home </a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--/container-->
         </div>
-        <!--/navbar-inner-->
     </header>
 
     <section class="category-section">
@@ -35,13 +43,16 @@
             <div class="row">
                 <div class="col-md-3 col-lg-3">
                     <div class="category-form">
-                        <form>
-                            <div class="input-group">
-                                <input type="text" placeholder="Search">
-                                <span><i class="fa fa-search"></i></span>
-
+                        <div class="category-form">
+                            <div class="input-group search-input">
+                                    <a href="" target="_blank" hidden></a>
+                                    <input class="search-query" type="text" placeholder="Search">
+                                    <div class="autocom-box">
+                                        <!-- here list are inserted from javascript -->
+                                    </div>
+                                <div class="icon"> <span><i class="fa fa-search"></i></span></div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="Categories-list">
                         <h3>Categories</h3>
@@ -130,6 +141,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/mmenu-light.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

@@ -1,0 +1,51 @@
+
+/*!
+ * Mmenu Light v3.0.3
+ * mmenujs.com/mmenu-light
+ *
+ * Copyright (c) Fred Heusschen
+ * www.frebsite.nl
+ *
+ * License: CC-BY-4.0
+ * http://creativecommons.org/licenses/by/4.0/
+ */
+
+ .mobile-menu { 
+  display: none;
+  @media (max-width: 768px) { 
+    display: block; 
+    padding: 8px;
+    margin: 5px;
+    position: absolute;
+    top: 12px;   
+    right: 0;
+  }
+  &.bg {
+   &::before,
+   &::after {
+     background: #fff !important;
+   }
+   span{
+     background: #fff !important;
+   }
+  }
+  &::before,
+  &::after {
+  
+    width: 28px;
+    content: '';
+    display: block;
+    background: #fff !important;
+    height: 2px;
+  }
+  span{
+    background: #fff !important;
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin: 6px 0;
+  }
+}
+
+
+

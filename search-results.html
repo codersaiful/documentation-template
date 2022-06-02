@@ -9,25 +9,33 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/mmenu-light.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header id="mainNav" class="header-section">
         <div class="container">
-            <div class="navbar-inner">
-                <div class="logo">
-                    <a class="brand" href="index.html"><img src="assets/images/logo.png"></a>
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="logo">
+                        <a class="brand" href="index.html"><img src="assets/images/logo.png"></a>
+                    </div>
                 </div>
-                <div class="main-menu">
-                    <ul class="nav">
-                        <li id="home" class="active"><a href="/">Home <b class="caret"></b></a></li>
-                    </ul>
+                <div class="col-md-9 col-lg-9">
+                    <div class="header-menu">
+                        <a class="mobile-menu" href="#ham-navigation"><span></span></a>
+                        <div id="ham-navigation" class="main-menu">
+                            <ul class="navigation clearfix">
+                                <li><a href="#index.html"> Home </a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--/container-->
         </div>
-        <!--/navbar-inner-->
     </header>
 
     <section class="category-section">
@@ -35,13 +43,16 @@
             <div class="row">
                 <div class="col-md-3 col-lg-3">
                     <div class="category-form">
-                        <form>
-                            <div class="input-group">
-                                <input type="text" placeholder="Search">
-                                <span><i class="fa fa-search"></i></span>
-
+                        <div class="category-form">
+                            <div class="input-group search-input">
+                                    <a href="" target="_blank" hidden></a>
+                                    <input class="search-query" type="text" placeholder="Search">
+                                    <div class="autocom-box">
+                                        <!-- here list are inserted from javascript -->
+                                    </div>
+                                <div class="icon"> <span><i class="fa fa-search"></i></span></div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-9 col-lg-9">
@@ -56,47 +67,47 @@
                         <ul class="content-article-list">
     
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Product support</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Product support</a>
                                 <p>We sincerely apologize if you purchased a product from us that is now giving you a hard time! We choose partners who provide first-class support, so they'll assist you with any issue you may be</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Contact AppSumo</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Contact AppSumo</a>
                                 <p>Try out the magnifying glass in the bottom right corner of your screen for additional assistance navigating our Help Center. There, you can search related articles and contact our Support team if you</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Product Reviews and Questions</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Product Reviews and Questions</a>
                                 <p>We welcome Sumo-lings to ask product-specific questions on that deal's page. There, the creators can answer all of your need-to-knows about the use of their tool. After you've taken it for a test</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I login to my licensed product?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I login to my licensed product?</a>
                                 <p>Once you've activated your license, that’s it! No further action is required within your AppSumo account. To access the purchased product, log in to the partner's site using your activation email and</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Freebies</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Freebies</a>
                                 <p>You've probably heard the&nbsp;term "freebie" thrown around our website a lot.&nbsp; Maybe you saw it in a product description,&nbsp;read it in the comments,&nbsp;or a member of the AppSumo staff mentioned it, but you've</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I refund my license?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I refund my license?</a>
                                 <p>In the unfortunate event that your licensed product isn't the best fit for your business (bummer!), you can get your money back by requesting a refund within your AppSumo account. To refund a product</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Request a deal</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Request a deal</a>
                                 <p>We're always excited to discover awesome software tools and digital products (like courses, e-books, templates, and more) that can help Sumo-lings' businesses thrive! Do you have a product in mind</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Where is my license in my account?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Where is my license in my account?</a>
                                 <p>All products purchased from the AppSumo marketplace can be found in the "Products" page of your AppSumo account. You can use the search bar beneath the “Products” header in the top left corner of the</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Upgrading / downgrading my license</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Upgrading / downgrading my license</a>
                                 <p>Why should I upgrade/downgrade my license? Because you can, that’s why! After activating and testing your product license, make changes to the variable features in your tier/plan, with the option to</p>
                             </li>
                         
@@ -106,132 +117,132 @@
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I ask for reviews once my product goes live?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I ask for reviews once my product goes live?</a>
                                 <p>Asking for reviews is half the battle. Ask on your product page, via email, on Instagram, Facebook, Discord, Twitter, and all over social media. Just don’t ask your parents or teammates to write</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I partner with AppSumo and submit my product?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I partner with AppSumo and submit my product?</a>
                                 <p>To become a partner and sell your tool on our site by yourself, log into your AppSumo account and visit our Partner Portal. Click “Start selling” and follow the steps. After you submit your product,</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I activate my license?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I activate my license?</a>
                                 <p>To activate your license and access your purchase, follow these steps: Head to the "Products" page of your AppSumo account Use the "Actions" dropdown menu to the right of your product to select</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Request a refund</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Request a refund</a>
                                 <p>We’re sorry to hear that one of your purchases wasn’t a good fit for you (we don’t take it personally)! You can easily request a refund directly through your AppSumo account. To request a refund: Go</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Expired Deals</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Expired Deals</a>
                                 <p>Mayday Mayday! Your AppSumo code has expired! We're sorry if that's the reason you're reading this. :( If you take a look at your redemption instructions, you’ll see that all deals have expiration</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Codes and Redemption Instructions</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Codes and Redemption Instructions</a>
                                 <p>So you've taken the plunge and purchased a deal...now what? You can find all of your AppSumo purchases on the "Products" page of your AppSumo Account. Here's a walkthrough of how to do so: Head to</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Invalid Codes</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Invalid Codes</a>
                                 <p>Sorry your code is giving you a hard time. Sometimes&nbsp;the error exists because a space&nbsp;is entered to the right or left of the code when copying it and pasting it into the redemption field. Be sure to d</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Merge my accounts</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Merge my accounts</a>
                                 <p>Is AppSumo the site so nice, you signed up twice? We totally understand. We all have more than one email address, so we get it if you signed up for more than one AppSumo account. We’re sorry for any</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Sold Out Deals</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Sold Out Deals</a>
                                 <p>We're sorry you missed a deal! :( Unfortunately, once a deal has ended or sells out, our contract with the partner has expired, so we cannot sell any more copies of the deal. Tips to not miss the</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Refund FAQ</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Refund FAQ</a>
                                 <p>How do I know my refund was processed? You can verify that a refund was processed successfully on the "Products" page of your AppSumo account. In the navigation bar on any AppSumo page, click the</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do AppSumo referrals work?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do AppSumo referrals work?</a>
                                 <p>Sharing an AppSumo referral link with your network is an easy way to spread the fun and get rewarded with AppSumo credits! Send your friends a referral link and they'll get a $10 discount toward</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Refund Policy</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Refund Policy</a>
                                 <p>The refund policy for any eligible product sale is a full refund of the purchase price for the number of days established per product from the date of purchase for any reason or no reason. That means</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Deal Terms and Features</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Deal Terms and Features</a>
                                 <p>You can find all of your AppSumo purchases on the "Products" page of your AppSumo account. Here's a walkthrough of how to do so: Head to AppSumo Select "Account" from the navigation bar at the top of</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>What is Stacking?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>What is Stacking?</a>
                                 <p>So you’re a big spender, huh? We like that about you. Here’s what you need to know about stacking codes: “Stack/stacking/stackable” means you can buy multiple codes for the same product to unlock</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>What is a Lifetime Deal?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>What is a Lifetime Deal?</a>
                                 <p>We often get the question of “What does lifetime deal mean? - Will I still have this product when I’m 95?” That’s a great question! Here’s what “lifetime deal” really means: Once you purchase and</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>My deal is live! Now what?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>My deal is live! Now what?</a>
                                 <p>It’s time to promote your offer! You and your team will be responsible for all the marketing and traffic to your deal. The products with the most traffic, reviews, and sales will also be rewarded</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How do I set up my redemption flow?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I set up my redemption flow?</a>
                                 <p>You will need a redemption landing page and unique codes that can be purchased by Sumo-lings, our customers. Your page should have: Approved AppSumo branding The name/branding for your product Fields</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>What is AppSumo’s refund policy for my listing?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>What is AppSumo’s refund policy for my listing?</a>
                                 <p>We offer offer all customers a 60-day money-back guarantee to ensure we give you the happiest customers. We want to make things as easy as possible for you to not spend additional time on customer</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How and when will I be paid?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How and when will I be paid?</a>
                                 <p>When listing your product, you get to choose your own listing price. Sell your product at the original price or at a discount—it’s your call. How do I get paid? We use a global payment processing</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How to navigate my Partner Portal?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How to navigate my Partner Portal?</a>
                                 <p>Check out these videos to navigate all the innovative features within your dashboard! Partner Dashboard Product Sales &amp; Analytics</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>What is a license?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>What is a license?</a>
                                 <p>Licenses are our (newly-released) alternative to codes. Whoop Whoop! Licenses have a super smooth redemption experience and allow you to connect to our partner's site immediately upon activation.</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>AppSumo Plus FAQ</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>AppSumo Plus FAQ</a>
                                 <p>What is AppSumo Plus? AppSumo Plus is our rewards membership program that offers perks like: 10% off AppSumo purchases exclusive access to featured products access to the secret Sauce community free</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Purchase history</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Purchase history</a>
                                 <p>You can find all of your AppSumo purchases (and associated invoices) through the "Products" page of your AppSumo account. Here's a walkthrough of how to do so: In the navigation bar on any AppSumo</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>Manage email preferences or unsubscribe</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>Manage email preferences or unsubscribe</a>
                                 <p>Manage preferences To manage your email subscription or unsubscribe altogether, just click the "Manage Preferences" link at the bottom of our emails. There, you’ll see the option to customize your</p>
                             </li>
                         
                             <li>
-                                <a href="#s"><i class="fas fa-file-alt"></i>How do I get my referral credits?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How do I get my referral credits?</a>
                                 <p>Thanks so much for sharing AppSumo with your network! 🙂 When someone makes their first purchase from the AppSumo store using your referral link, they'll automatically get a $10 discount on that</p>
                             </li>
                         
                             <li>
-                                <a href="#"><i class="fas fa-file-alt"></i>How can I manage my AppSumo Plus subscription?</a>
+                                <a href="search-results.html"><i class="fas fa-file-alt"></i>How can I manage my AppSumo Plus subscription?</a>
                                 <p>How can I update my payment method for AppSumo Plus? In your AppSumo account, you'll see a "Plus membership" tile where you can review your AppSumo Plus subscription details (membership status,</p>
                             </li>
                         
@@ -309,6 +320,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/mmenu-light.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

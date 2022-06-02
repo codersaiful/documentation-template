@@ -1,0 +1,102 @@
+.menu {
+    margin-top: 10px;
+    li {
+        position: relative;
+        @media (max-width: 991px) {
+          display: block;
+        }
+      a {
+        @media (max-width: 991px) {
+          padding: 20px 30px;
+          text-align: left;
+        }
+  
+        @media (max-width: 1199px) {
+          padding-left: 20px;
+        }
+      }
+      ul{
+        @media(max-width:768px) {
+          position: absolute;
+          visibility: hidden;
+          opacity: 0; 
+          width: 200px;
+          background-color: #333;
+          border-radius: 10px;
+          padding: 10px 0;
+          transition: .3s;
+          top: 100px;
+          li{
+            display: block;
+            a{
+              color: #000;
+              text-align: left;
+              padding: 10px 20px;
+              font-weight: 500;
+             &:hover{
+                color: #333;
+                background-color: #efedf3; 
+              }
+            }
+          }
+        }
+      }
+      &:hover{
+        ul {
+          visibility: visible;
+          opacity: 1;
+          top: 40px;
+        }
+      }
+    }
+  }
+  
+  .mm-spn a {
+    background: inherit;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding:14px 18px !important;
+   
+}
+.mm-spn.mm-spn--navbar ul:before { 
+  border-top: 1px solid #ddd;
+}
+.mm-spn li:after {
+  border-top: 1px solid #ddd;  
+}
+.mm-spn.mm-spn--light {
+    color: var(--clr-white); 
+    background: #333;
+}  
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: transparent;
+}
+.mm-spn li:before {
+ color: #ddd;
+}
+  .mobile-menu span{
+    background: #333;
+  }
+  .mobile-menu:after,
+  .mobile-menu:before{
+    background: #333;
+  }
+  
+ 
+  .maan-header-style-two {
+    .mobile-menu span{
+      background: var(--clr-white);
+    }
+    .mobile-menu:after,
+    .mobile-menu:before{
+      background: var(--clr-white); 
+    }
+  }
+  .mm-spn.mm-spn--light {
+    color: #fff;
+    background: #333;
+}
+  

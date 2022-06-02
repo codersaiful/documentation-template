@@ -84,7 +84,7 @@
             border: 1px solid #D0D0D0;
             border-radius: 3px;
             color: #666;
-            padding: 0 14px;
+            padding: 0 14px; 
 
         }
 
@@ -96,6 +96,13 @@
             transform: translate(0, -50%);
             font-size: 16px;
         }
+        .icon {
+            height: 40px;
+            width: 55px;
+          }
+          &.search-input {
+              box-shadow: none !important;
+          }
     }
 }
 

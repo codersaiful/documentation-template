@@ -4,17 +4,46 @@ File:           JS Core
 Version:        1.0
 Last change:    00/00/00 
 -------------------------------------------------------------------------------- */
-// (function ($) {
-//     "use strict";
+(function ($) {
+    "use strict";
+    
+
+    
+  /* ==================================================
+    # Responsive Menu
+   ===============================================*/
+   document.addEventListener("DOMContentLoaded", () => {
+    const menu = new MmenuLight(
+      document.querySelector("#ham-navigation"),
+      "(max-width: 768px)"
+    );
+
+    const navigator = menu.navigation({
+      selectedClass: "Selected",
+      slidingSubmenus: true,
+      theme: "light",
+      title: "Menu",
+    });
+    const drawer = menu.offcanvas({
+      position: "left",
+    });
+
+    document
+      .querySelector('a[href="#ham-navigation"]')
+      .addEventListener("click", (evnt) => {
+        evnt.preventDefault();
+        drawer.open();
+      });
+  });
 
 
-//     $('select').niceSelect();
+    $('select').niceSelect(); 
 
 
-// })(jQuery);
+})(jQuery);
 
 let suggestions = [ 
-    "Product support",
+  "Product support",
   "What is AppSumo Plus?",
   "My deal is live! Now what?",
   "How do I ask for reviews once my product goes live?",  
@@ -26,11 +55,7 @@ let suggestions = [
   "How do I login to my licensed product?",
   "How do I partner with AppSumo and submit my product?",
   "How do I ask for reviews once my product goes live?", 
-  "Designer",
-  "Developer",
-  "Web Designer",
 ];
-
 
 
 //Create this file first before writing javascript
@@ -58,7 +83,7 @@ inputBox.onkeyup = (e)=>{
             console.log(webLink);
             linkTag.click();
         }
-        emptyArray = suggestions.filter((data)=>{
+        emptyArray = suggestions.filter((data)=>{ 
             //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
         });

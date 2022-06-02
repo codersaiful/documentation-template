@@ -25,6 +25,14 @@
     } 
 }
 @media (max-width: 768px){
+    .main-menu {
+        ul {
+            li {
+                display: block;
+            }
+        }
+    }
+   
     #searchBar {
         .search-query {
             width: 350px;
@@ -42,6 +50,14 @@
     }
     .category-content {
         margin-left: 0px;
+    }
+    .category-form {
+        margin-bottom: 30px;
+    }
+    .header-section{
+        .logo {
+            padding-left: 30px;
+        }
     }
 }
 @media (max-width: 600px){
@@ -85,5 +101,12 @@
     }
     *::placeholder {
         font-size: 13px;
+      }
+
+      .search-input {
+        .icon {
+            line-height: 50px;
+            font-size: 16px;
+        }
       }
 }
